@@ -518,6 +518,56 @@ footer{
         margin-top: 10px;
         margin-bottom: 10px;   
     }
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+    /* Thay đổi kiểu dáng và bố cục cho thiết bị máy tính bảng */
+    .container{
+        margin-right:2em;
+        margin-left:-2em;
+
+    }
+    .image_slider{
+        margin-top:5%;
+    }
+    .list ul li a{
+        white-space: nowrap;
+        font-size: 10px;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+    .list ul li{
+        width: 120px;
+        padding: 5px 0;
+    }
+    .wrapper_logo{
+        display: none;   
+    }
+    .list ul li a{
+        white-space: nowrap;
+        font-size: 10px;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+    .list ul li{
+        width: 120px;
+        padding: 5px 0;
+    }
+    .wrapper_logo{
+        display: none;   
+    }
+    .list{
+        transform: translateX(30px);
+    }
+    #country{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .box_input input{
+        margin-left: 2px;
+        margin-right: 10px;
+    }
+}
     
 }
 
@@ -807,5 +857,8 @@ footer{
   .social a {
     margin-top:10px;
     margin-right: 10px;
+  }
+  .box_input{
+    gap: 10px;
   }
 }
