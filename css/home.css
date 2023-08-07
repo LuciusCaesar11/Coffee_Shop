@@ -467,7 +467,7 @@ footer{
     .box1 button {
         margin-left: -8px; 
         padding: 10px 20px;
-        text-wrap: nowrap;
+        flex-wrap: nowrap;
     }
     
 }
@@ -496,6 +496,7 @@ footer{
     }
     .text_begin{
         margin-top: 8%;
+        transform: translateX(-60px);
     }
    
     .container_box {
