@@ -307,6 +307,7 @@ header{
     border-radius: 3px;
     left:12.3%;
     box-shadow: 2px 2px 5px rgb(225, 220, 220);
+    transform: translateX(50px);
 }
 
 .pseudo{
