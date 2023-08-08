@@ -6,6 +6,9 @@
     .wrapper_product{
         width:33.3%;
     }      
+    .quick_choices{
+        transform: translateX(-68px);
+    }
 }
 /* Thiết bị máy tính bảng */
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -419,10 +422,10 @@
         min-width: 120%;
     }
     .products{
-        transform: translateX(40px);
+        transform: translateX(25px);
     }
     .block_next{
-        transform: translateX(55px);
+        transform: translateX(52px);
     }
     #fix_responsive{
         font-size: 24px;
@@ -434,9 +437,6 @@
     }
     .vouchers{
         transform: translateX(20px);
-    }
-    .list{
-        display: none;
     }
     .utilities{
         transform: translateX(30px);
