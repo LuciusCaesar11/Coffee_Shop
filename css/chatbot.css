@@ -164,13 +164,13 @@
         border-radius: 10px;
     }
 }
-@media screen and (min-width:426) and (max-width: 575px){
+@media screen and (max-width: 575px){
     .chatbot-toggler{
         left:2%;
         bottom:5%;
     }
     .chatbot{
-        left:50px;
+        left:3%;
         bottom: 15%;;
         width: 70%;
         height: 50%;
