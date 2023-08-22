@@ -1,5 +1,5 @@
 const loadingElement = document.getElementById('loading');
-var timeEvent="2023-08-15T00:00:00Z";
+var timeEvent="2023-08-30T00:00:00Z";
 // Hàm để xóa hiệu ứng loading
 function removeLoading() {
   loadingElement.remove();
@@ -593,7 +593,7 @@ function addToCart(title, price, productImg, originalPrice) {
     cartZone.appendChild(cartContent); // Thêm cart-items mới vào cart-zone
 
     cartContent.querySelector(".cart-remove").addEventListener("click", () => removeCartItem(item.title));
-    cartContent.querySelector(".cart-quantity").addEventListener("change", quantityChanged.bind(cartContent, item.title));
+    cartContent.querySelector(".cart-quantity").addEventListener("change", () => quantityChanged(cartContent.querySelector(".cart-quantity"), item.title));
     const inputElement = cartContent.querySelector(".cart-quantity");
     inputElement.addEventListener("change", () => quantityChanged(inputElement, item.title));
   }

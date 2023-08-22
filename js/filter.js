@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //js cho event flash sale timer
 // Đặt ngày đích mà bạn muốn đếm ngược đến
-var targetDate = new Date("2023-08-15T00:00:00Z");
+var targetDate = new Date("2023-08-30T00:00:00Z");
 
 // Lấy các phần tử div cho ngày, giờ, phút và giây
 var daysElements = document.querySelectorAll(".box_days span");
@@ -404,7 +404,7 @@ function addToCart(title, price, productImg, originalPrice) {
     cartZone.appendChild(cartContent); // Thêm cart-items mới vào cart-zone
 
     cartContent.querySelector(".cart-remove").addEventListener("click", () => removeCartItem(item.title));
-    cartContent.querySelector(".cart-quantity").addEventListener("change", quantityChanged.bind(cartContent, item.title));
+    cartContent.querySelector(".cart-quantity").addEventListener("change", () => quantityChanged(cartContent.querySelector(".cart-quantity"), item.title));
     const inputElement = cartContent.querySelector(".cart-quantity");
     inputElement.addEventListener("change", () => quantityChanged(inputElement, item.title));
   }
